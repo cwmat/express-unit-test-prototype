@@ -1,0 +1,56 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    title REST API
+    meta(name='description', content='CSCIE-31 Assignment 4')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='./css/vendor/bootstrap.min.css')
+    link(rel='stylesheet', href='./css/style.css')
+    //
+      Sources:
+      - HES starter code
+      - Images: Unsplash
+      - Webms: Gfycat
+      - CSS theme/framework: Bootstrap
+      - HTML Framework: HTML Boilerplate
+      - Node modules: log-util, underscore
+  body
+    //
+      if lte IE 9
+      p.browserupgrade
+      | You are using an
+      strong outdated
+      |  browser. Please
+      a(href="https://browsehappy.com/") upgrade your browser
+      |  to improve your experience and security.
+    // Navigation
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top
+      .container
+        a.navbar-brand(href='#') Charles Mateer Assignment 5 - "Smell-map" REST API Test
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarResponsive.collapse.navbar-collapse
+          ul.navbar-nav.ml-auto
+            li.nav-item
+              a.nav-link(href='./#listIndex') List
+            li.nav-item
+              a.nav-link(href='./#findIndex') Find
+            li.nav-item
+              a.nav-link(href='./#createIndex') Create
+            li.nav-item
+              a.nav-link(href='./#updateIndex') Update
+            li.nav-item
+              a.nav-link(href='./#deleteIndex') Delete
+            li.nav-item
+              a.nav-link(href='./about') About
+    // Page Content
+    block content
+    // Load scripts
+    script(src='./js/vendor/bootstrap.min.js')
+    script(src='./js/vendor/modernizr-3.5.0.min.js')
+    script(src='https://code.jquery.com/jquery-3.2.1.min.js', integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=', crossorigin='anonymous')
+    script.
+      window.jQuery || document.write('<script src="./js/vendor/jquery-3.2.1.min.js"><\\\/script>')
+    script(src='./js/main.js')

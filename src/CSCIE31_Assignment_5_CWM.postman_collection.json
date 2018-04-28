@@ -1,0 +1,190 @@
+{
+	"info": {
+		"_postman_id": "8888dfb3-5636-46db-8721-a5845003c297",
+		"name": "CSCIE31",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Smellmap API List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:8084/api/smellmap",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"smellmap"
+					]
+				},
+				"description": "localhost:8084/api/smellmap"
+			},
+			"response": []
+		},
+		{
+			"name": "Smellmap API Find",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:8084/api/smellmap/5aaeff856810fb2830036935",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"smellmap",
+						"5aaeff856810fb2830036935"
+					]
+				},
+				"description": "localhost:8084/api/smellmap/:smellid"
+			},
+			"response": []
+		},
+		{
+			"name": "Smellmap API Create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Test create",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "Bad",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "desc",
+							"value": "Test desc",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "lat",
+							"value": "35.0",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "lon",
+							"value": "-77.0",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8084/api/smellmap",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"smellmap"
+					]
+				},
+				"description": "localhost:8084/api/smellmap/"
+			},
+			"response": []
+		},
+		{
+			"name": "Smellmap API Update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Test update worked",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "Bad",
+							"type": "text"
+						},
+						{
+							"key": "desc",
+							"value": "This just got updated!",
+							"type": "text"
+						},
+						{
+							"key": "lat",
+							"value": "35.0",
+							"type": "text"
+						},
+						{
+							"key": "lon",
+							"value": "-77.0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8084/api/smellmap/5abfd071c81da02f34807b20",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"smellmap",
+						"5abfd071c81da02f34807b20"
+					]
+				},
+				"description": "localhost:8084/api/smellmap/:smellid"
+			},
+			"response": []
+		},
+		{
+			"name": "Smellmap API Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:8084/api/smellmap/5abfd26b40b4721b5c3b0651",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"smellmap",
+						"5abfd26b40b4721b5c3b0651"
+					]
+				},
+				"description": "localhost:8084/api/smellmap/:smellid"
+			},
+			"response": []
+		}
+	]
+}

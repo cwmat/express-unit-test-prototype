@@ -1,0 +1,148 @@
+extends layout
+
+block content
+  .container
+    // List
+    #listIndex.row
+      .col-lg-12.text-center
+        h1.mt-5.starter REST API Test - List
+      // row
+    .row
+      .col-lg-12
+        .panel.panel-default
+          .panel-heading Smellmap Entries
+          .panel-body
+            .table-responsive
+              table.table.table-striped
+                thead
+                  tr
+                    th ID
+                    th Name
+                    th Lon/Lat
+                    th Type
+                    th Description
+                tbody#list-table
+      // row
+    .spacer
+    hr
+    // Find
+    #findIndex.row
+      .col-lg-12.text-center
+        h1.mt-5.starter REST API Test - Find
+      // row
+    // Find
+    .row
+      .col-lg-12
+        label
+          | Entry ID
+          select#find-drop-down.form-control(name='entry-id')
+        button#find-button.btn.btn-primary(type='button') Find
+        .panel.panel-default
+          .panel-heading Smellmap Entries
+          .panel-body
+            .table-responsive
+              table.table.table-striped
+                thead
+                  tr
+                    th ID
+                    th Name
+                    th Lon/Lat
+                    th Type
+                    th Description
+                tbody#find-table
+      // row
+    .spacer
+    hr
+    // Create
+    #createIndex.row
+      .col-lg-12.text-center
+        h1.mt-5.starter REST API Test - Create
+      // row
+    .row
+      .col-lg-12
+        .form-group
+          label Name
+          input#create-name.form-control(placeholder='Enter text', name='name', value='Create Test')
+        .col-lg-6
+          .form-group
+            label Longitude
+            input#create-long.form-control(placeholder='Enter text', name='lon', value='-77.523')
+        .col-lg-6
+          .form-group
+            label Latitude
+            input#create-lat.form-control(placeholder='Enter text', name='lat', value='35.476')
+        .form-group
+          label Type
+          select#create-type.form-control(name='type')
+            option Good
+            option Neutral
+            option Bad
+        .form-group
+          label Description
+          textarea#create-desc.form-control(rows='3', name='desc') Create test desc.
+        button#create-button.btn.btn-primary(type='button') Create
+        div Returned Result:
+        pre#create-result.
+          None yet, enter values/accept deafult and hit "Create"        
+        // Col
+      // row
+    .spacer
+    hr
+    // Update
+    #updateIndex.row
+      .col-lg-12.text-center
+        h1.mt-5.starter REST API Test - Update
+      // row
+    .row
+      .col-lg-12
+        label
+          | Entry ID
+          select#update-drop-down.form-control(name='entry-id')
+        .form-group
+          label Name
+          input#update-name.form-control(placeholder='Enter text', name='name', value='Update Test')
+        .col-lg-6
+          .form-group
+            label Longitude
+            input#update-long.form-control(placeholder='Enter text', name='lon', value='-77.523')
+        .col-lg-6
+          .form-group
+            label Latitude
+            input#update-lat.form-control(placeholder='Enter text', name='lat', value='35.476')
+        .form-group
+          label Type
+          select#update-type.form-control(name='type')
+            option Good
+            option Neutral
+            option Bad
+        .form-group
+          label Description
+          textarea#update-desc.form-control(rows='3', name='desc') Update test desc.
+        button#update-button.btn.btn-primary(type='button') Update
+        div Returned Result:
+        pre#update-result.
+          None yet, enter values/accept deafult and hit "Update"        
+        // Col
+      // row
+    .spacer
+    hr
+    // Delete
+    #deleteIndex.row
+      .col-lg-12.text-center
+        h1.mt-5.starter REST API Test - Delete
+      // row
+    .row
+      .col-lg-12
+        label
+          | Entry ID
+          select#delete-drop-down.form-control(name='entry-id')
+        button#delete-button.btn.btn-primary(type='button') Delete
+        p
+        div Returned Result:
+        pre#delete-result.
+          None yet, enter values/accept deafult and hit "Create"        
+        // Col
+    // row
+  .spacer
+  hr
+  // container
