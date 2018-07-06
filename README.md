@@ -1,5 +1,2 @@
-# Assignment Details
-https://canvas.harvard.edu/courses/35096/assignments/202430
-
 # Description
-See document submitted with assignment for overview of this project.
+•	[Full Documentation](https://drive.google.com/open?id=15Ny2OoN1I-CuuVYONZV9W-hmuARVXoa4)
